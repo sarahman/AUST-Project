@@ -1,0 +1,48 @@
+/* CSS Document */
+.title{ /*header of 2nd demo*/
+cursor: hand;
+cursor: pointer;
+width:784px;
+height:auto;
+clear:both;
+}
+.list {
+	width:780px;
+	height:auto;
+	padding:5px 0 0 4px;
+	color:#333333;
+	font-style:italic;
+}
+.list a {
+	color:#333333;
+}
+.openlanguage{ /*class added to contents of 2nd demo when they are open*/
+color: green;
+}
+
+.closedlanguage{ /*class added to contents of 2nd demo when they are closed*/
+color: red;
+}
+
+.link {
+	width:580px;
+	height:auto;
+	float:left;
+}
+.option {
+	width:200px;
+	height:auto;
+	float:right;
+}
+.link1 {
+	width:580px;
+	height:auto;
+	float:left;
+	padding:5px 0 0 0;
+}
+.option1 {
+	width:200px;
+	height:auto;
+	float:right;
+	padding:5px 0 0 0;
+}

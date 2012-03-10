@@ -1,0 +1,354 @@
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	margin:0;
+	padding:0;
+	background:url(../images/body-bg.gif) repeat-x;
+	background-color:#FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: inherit;
+}
+h2 {
+	font-stretch:normal;
+	text-transform:capitalize;
+}
+li {
+	list-style:none;
+}			
+div, img,fieldset,input,textarea {
+	border:none;
+	border-width:0;
+}
+button {
+	border:none;
+	border-width:0;
+	cursor:pointer;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:14pt;
+	color:#474740;
+	line-height:15px;
+}
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:15px;
+	color:#474740;
+}
+h3 {
+	font-family:Georgia;
+	font-size:13px;
+	line-height:12px;
+	color:#000033;
+}		
+a {
+	text-decoration:none;
+}		
+br {
+	clear:both;
+}
+th {
+	background:#70AED3;
+	font-weight:normal;
+	width:auto;
+	height:15px;
+	text-align:left;
+	text-decoration:underline;
+	padding:2px 0 2px 10px;
+}
+#wrapper {
+	width:940px;
+	height:auto;
+	margin:0 auto;
+	margin-top:20px; 
+	clear:both;
+}
+.header {
+	width:auto;
+	height:auto;
+	padding:20px 0 0 0;
+	clear:both;
+	background:rl(../images/header-bg.png) repeat-y;
+}
+.header .logo {
+	width:auto;
+	height:auto;
+	clear:both;
+}
+.logout {
+	width:auto;
+	height:10px;
+	float:right;
+}
+.logout a {
+	color:#666666;
+	font:Arial;
+	font-size:12px;
+}
+.logout a:hover {
+	font:Verdana;
+	font-size:12px;
+	font-style:italic;
+	text-decoration:underline;
+}
+.nav-bar {
+	width:auto;
+	height:30px;
+	clear:both;
+	background:#668040;
+	margin:20px 0 0 0;
+}
+.nav-bar ul {
+	width:auto;
+	height:auto;
+	float:left;
+}
+.nav-bar ul li {
+	width:auto;
+	height:auto;
+	padding:0;
+	float:left;
+	position:relative;
+}
+.nav-bar ul li a {
+	width:100px;
+	height:23px;
+	padding:7px 10px 0 10px;
+	color:#eeeeee;
+	font-family:tahoma;
+	display:block;
+	text-align:center;
+}
+.nav-bar ul li a:hover {
+	background:#485A2D;
+}
+.nav-bar ul li ul {
+	width:120px;
+	height:auto;
+	background:#668040;
+	float:none;
+	position:absolute;
+	visibility:hidden;
+}
+.nav-bar ul li:hover> ul {
+	visibility:visible;
+	position:absolute;
+}
+.nav-bar ul li ul li {
+	width:auto;
+	height:auto;
+	border-top:1px solid #FFFFFF;
+	
+}
+.container {
+	width:auto;
+	height:auto;
+	clear:both;
+	margin:20px 0 20px 0;
+}
+.container .banner-txt {
+	width:auto;
+	height:auto;
+	padding:20px 0 0 0;
+	border-top:4px solid #668040;
+}
+#loginDiv {
+	width:434px;
+	height:auto;
+	margin:0 auto;
+	clear:both;
+}
+#loginDiv .loginpanel {
+	width:434px;
+	height:272px;
+	margin:70px 0 70px 0;
+	background:url(../images/login-bg.gif) no-repeat;
+}
+#loginDiv .error {
+	height:auto;
+	width:210px;
+	margin:0 auto;
+	padding:10px 0 0 0;
+	text-align:center;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	color:#FF0000;
+	font-weight:bold;
+}
+.loginpanel form {
+	width:200px;
+	height:auto;
+	margin:0 auto;
+	padding:40px 0 20px 0;
+}
+.loginpanel p {
+	width:auto;
+	height:auto;
+	margin:10px 0 0 0;
+}
+.loginpanel label {
+	width:auto;
+	height:auto;
+	font-family:verdana;
+	font-size:12px;
+	font-weight:600;
+	color:#777777;
+}
+.loginpanel .input-txt {
+	width:155px;
+	height:auto;
+	border:2px solid #555555;
+}
+.loginpanel .input-txt:focus {
+	background: #ffffee;
+}
+
+
+/* style for index page */
+
+.headline {
+	width:auto;
+	height:auto;
+	padding:0 0 5px 0;
+	border-bottom:4px solid #3E7C97;
+}
+.content a {
+	width:auto;
+	height:auto;
+	padding-bottom:1px;
+	font-family:verdana;
+	color: #003399;
+}
+.content a:hover {
+	border-bottom:1px solid ;
+}
+/* style for homepage maneger */
+.left {
+	width:220px;
+	height:auto;
+	float:left;
+	padding:0 20px 0 0;
+}
+.left ul {
+	width:auto;
+	height:auto;
+	padding:0 0 25px 0 ;
+}
+.left ul p {
+	width:150px;
+	height:auto;
+	padding-bottom:3px;
+	border-bottom:1px solid #336699;
+	display:block;
+	font-family:tahoma;
+	font-size:14px;
+	font-weight:bold;
+	font-variant:small-caps;
+	color: #003300;
+}
+.left ul li {
+	width:auto;
+	height:auto;
+	padding:5px 0 0 10px;
+}
+.left ul li a {
+	width:auto;
+	height:auto;
+	display:inline-block;
+	color:#668040;
+}
+.left ul li a:hover {
+	text-decoration:underline;
+}
+.right {
+	width:700px;
+	height:auto;
+	float:left;
+}
+.contentDiv {
+	width:auto;
+	height:auto;
+	clear:both;
+	margin:20px 0 0 0;
+}
+.content {
+	width:700px;
+	height:auto;
+	margin:20px 0 0 0px;
+}
+
+.content label {
+	font-family:tahoma;
+	font-size:13px;
+	/*margin:0 0 10px 20px;*/
+	line-height:12px;
+
+}
+.content input,textarea {
+	width:520px;
+	height:auto;
+	/*margin:0 0 10px 20px;*/
+	border:1px solid #CCCCCC;
+}
+.content fieldset {
+	border:1px solid #CCCCCC;
+	padding:10px 20px 0 20px ;
+}
+.content legend {
+	width:auto;
+	height:auto;
+	padding:2px 5px 2px 5px;
+	border:1px solid #CCCCCC;
+	color:#0066CC;
+}
+.content .file {
+	width:200px;
+	height:auto;
+	margin-bottom:5px;
+}
+.content .button {
+	width:60px;
+	height:20px;
+	background:#EEEEEE;
+	padding-bottom:5px;
+	margin:10px 0 5px 104px;
+	border:1px solid #BBBBBB;
+	font-weight:bold;
+}
+.content .button:hover {
+	border:1px solid #990000;
+	cursor:pointer;
+}
+.content form table {
+	width:auto;
+	height:auto;
+	/*margin:20px 0 20px 0;*/
+}
+.content form table tr td {
+	width:auto;
+	height:auto;
+	padding:10px 0 10px 10px;
+}
+
+
+
+/* style for content management page */
+
+.con_manage_table {
+	width:800px;
+	height:auto;
+	border:1px solid #CCCCCC;
+	padding:2px;
+	text-align:left;
+}
+.con_manage_table th {
+	padding:2px 0 2px 10px;
+}
+/*.con_manage_table td {
+padding:5px 0px 5px 10px;
+}*/

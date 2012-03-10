@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>aust homepage</title>
+<link rel="stylesheet" href="../../css/style.css" media="all" type="text/css" />
+<link rel="stylesheet" href="../../css/style2.css" type="text/css" />
+<link rel="stylesheet" href="../../css/style_4.css" type="text/css" />
+<script type="text/javascript">
+function fileLinks() {
+    var fileLink;
+    if (document.getElementsByTagName('a')) {
+        for (var i = 0; (fileLink = document.getElementsByTagName('a')[i]); i++) {
+            if (fileLink.href.indexOf('.pdf') != -1) {
+                fileLink.setAttribute('target', '_blank');
+                fileLink.className = 'Link';
+            }
+            if (fileLink.href.indexOf('.doc') != -1) {
+                fileLink.setAttribute('target', '_blank');
+                fileLink.className = 'Link';
+            }
+            if (fileLink.href.indexOf('.zip') != -1) {
+                fileLink.setAttribute('target', '_blank');
+                fileLink.className = 'Link';
+            }
+			if (fileLink.href.indexOf('.txt') != -1) {
+                fileLink.setAttribute('target', '_blank');
+                fileLink.className = 'Link';
+            }
+        }
+    }
+}
+window.onload = function() {
+    fileLinks();
+}
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="top-menu">
+		<ul>
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../../about/about.html">About</a></li>
+			<li><a href="../../administration/administration.html">Administration</a></li>
+			<li><a href="../../academics/academics.html">Academics</a></li>
+			<li><a href="../../admission/admission.html">Admission</a></li>
+			<li><a href="../../faculty/faculty.html">Faculty</a></li>
+			<li><a href="../../login/login.html">Login</a></li>
+		</ul>
+	</div>
+	<div id="header">
+		<div class="logo">
+			<a href="../../index.html"><img src="../../images/logo.gif" /></a>
+		</div>
+		<div class="search">
+			<form action="" method="post">
+				<input class="search-text" type="text" name="search" value=" search..." style="color:#999999;" />
+				<button class="search-button" type="submit" name="submit"></button>
+			</form>	
+		</div>		
+	</div>
+	<div id="main-menu">
+		<ul>
+			<li><a href="../corner.html">Student's Corner</a></li>
+			<li><a href="../../alumni/alumni.html">Alumni</a></li>
+			<li><a href="../../events/events.html">Events</a></li>
+			<li><a href="../../news/news.html">News</a></li>
+			<li><a href="../../result/result.html">Result</a></li>
+			<li><a href="../../gallery/gallery.html">Gallery</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div class="content-body">
+			<div class="mid1">
+				<div class="headline">
+					<h2>Student's Group</h2>
+				</div>
+				<div class="mid-content">
+					<div class="student-zone">
+						<div class="group-img">
+							<img src="../../images/grp.jpeg" alt="" width="90px" height="80px" />
+						</div>
+						<div class="group-link">
+							<div class="group-title">
+								<p>
+									<a href="#">Advanced Database - Spring 2010</a>
+								</p>
+							</div>
+							<div class="group-details">	
+								<p>
+									This group is only created for CSE-4.2 (Spring 2010). It is created at 12/04/2010.
+								</p>	
+							</div>	
+						</div>
+					</div>
+					<div class="student-zone">
+						<div class="group-img">
+							<img src="../../images/grp.jpeg" alt="" width="90px" height="80px" />
+						</div>
+						<div class="group-link">
+							<div class="group-title">
+								<p>
+									<a href="#">Pattern - Spring 2010</a>
+								</p>
+							</div>
+							<div class="group-details">	
+								<p>
+									This group is only created for CSE-4.2 (Spring 2010). It is created at 12/04/2010.
+								</p>	
+							</div>	
+						</div>
+					</div>
+					<div class="student-zone">
+						<div class="group-img">
+							<img src="../../images/grp.jpeg" alt="" width="90px" height="80px" />
+						</div>
+						<div class="group-link">
+							<div class="group-title">
+								<p>
+									<a href="#">VLSI - Spring 2010</a>
+								</p>
+							</div>
+							<div class="group-details">	
+								<p>
+									This group is only created for CSE-4.2 (Spring 2010). It is created at 12/04/2010.
+								</p>	
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="headline">
+					<h3>Look At</h3>
+				</div>
+				<div class="right-content">
+					<div class="select-form">
+						<form action="student_zone.html" method="post">
+							<select name="dept" size="1">
+								<option selected="selected">Select Department</option>
+								<option value="">ARCHI</option>
+								<option value="">BBA</option>
+								<option value="">CE</option>
+								<option value="">CSE</option>
+								<option value="">EEE</option>
+								<option value="">IPE</option>
+								<option value="">TT</option>
+							</select>
+							<select name="sem" size="1">
+								<option selected="selected">Select Semester</option>
+								<option value="">1.1</option>
+								<option value="">1.2</option>
+								<option value="">2.1</option>
+								<option value="">2.2</option>
+								<option value="">3.1</option>
+								<option value="">3.2</option>
+								<option value="">4.1</option>
+								<option value="">4.2</option>
+							</select>	
+							<input type="image" name="submit" src="../../images/button02.gif" style=" padding:0 0 0 148px" />
+						</form>
+					</div>
+				</div>
+				<div class="headline">
+					<h3>Studnets</h3>
+				</div>
+				<div class="right-content">
+					<div class="list1">
+						<ul>
+							<li>
+								<a href="#">Informations</a>
+							</li>
+							<li>
+								<a href="student_zone.html">Documents</a>
+							</li>
+							
+							<li>
+								<a href="s_group.html">Groups</a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footerDiv">
+	<div id="footer">
+		<ul>
+			<li><a href="#">Aust Home</a></li>
+			<li><a href="#">International</a></li>
+			<li><a href="#">Vacancy</a></li>
+			<li><a href="#">Mail</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>	
+</div>
+</body>
+</html>
