@@ -1,0 +1,14 @@
+#slideshow * { margin: 0; padding: 0; }
+#slideshow { float:right;background: url('../images/bg_shadow.gif') no-repeat top; position: relative; padding:0; border:4px solid #668040; width: 565px; height:250px; }
+#slideshow #menu, #slideshow #pictures, #slideshow #loading { position: absolute; }
+#slideshow #loading { background: url('../images/spinner.gif'); display: block; top: 158px; left: 205px; text-indent: -5000px; width: 24px; height: 24px; visibility: hidden; z-index: 5; }
+#slideshow #pictures { /*background: url('../images/bg_side.jpg');*/ width: 430px; height: 277px; left: 0; overflow: hidden; }
+#slideshow #pictures li { display: block; position: absolute; top: 0; width: 437px; }
+#slideshow #pictures li img { display: block; position: relative; bottom: 0; }
+#slideshow #menu { background: url('../images/bg_side.jpg'); list-style-type: none; width: 173px; height: 237px; right: 0; padding-top: 13px; }
+#slideshow #menu li { width: auto; height:auto;display: block; z-index: 1000; position: relative; zoom: 1; }
+#slideshow #menu li a { width:auto; height:auto; display: block; font: 10px "Lucida Grande", "Verdana"; text-decoration: none; padding: 0 5px 10px 15px; z-index: 1000; color: #ccc; line-height: 12px; vertical-align: middle; zoom: 1; }
+#slideshow #menu li a:focus { outline: 0; }
+#slideshow #menu li a:hover { color: #fff; }
+#slideshow #menu li.current a { width:auto; height:auto; display:block; font: 10px "verdana"; color: #6699CC; padding: 0px 5px 10px 16px; line-height: 12px; }
+#slideshow #menu li.background { background: url('../images/arrow.gif') no-repeat left center; position: absolute; font-size: 1px; height: 7px; width: 4px; z-index: 5; }

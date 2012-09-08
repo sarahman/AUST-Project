@@ -1,0 +1,511 @@
+/* CSS Document */
+
+.headline {
+		line-height:12px;
+		display:block;
+		}
+.content-body .menu {
+			width:160px;
+			height:700px;
+			float:left;
+			margin:40px 20px 0 0;
+			}
+.menu .menu-item {
+				width:92px;
+				height:auto;
+				margin:20px 0 20px 0;
+				}
+.menu-item ul {	
+					font-weight:bold;
+					font-size:11px;
+					font-family:Verdana;
+					text-align:center;
+					}	
+/*.menubar ul {
+		width:110px;
+		height:auto;
+		margin-top:20px;
+		}*/							
+.menu-item ul li {
+			width:90px;
+			height:18px;
+			position:relative;
+			padding:2px;
+			display:block;
+			}
+.menu-item ul li a {
+			display:block;
+			overflow: auto; 
+			color:#000;
+			list-style-type:none ;
+			text-decoration: none;
+			padding:3px;
+			border-bottom:1px solid #666666;
+			border-right:1px solid #666666;
+			}
+.menu-item ul li a:hover {
+					background:url(../images/menu.png);
+					border-bottom:1px solid #666666;
+					border-right:1px solid #666666;
+					display:block;
+					}		
+											
+.menu-item ul li ul {
+				visibility:hidden;
+				list-style-type:none;
+				position: absolute;
+				/*padding:0 0 0 91px;*/
+				left:91px;
+				top:0;
+				}			
+.menu-item ul li:hover> ul {
+						visibility:visible;
+						position: absolute;
+						
+						}
+.menu-item ul li ul li {
+				width:60px;
+				display:block;
+				}
+.menu-item ul li ul li ul {
+				left:63px;
+			}				
+.menu-item ul li ul li ul li {
+			top:0;
+			padding-left:0px;
+			}
+.menu-item ul li ul li ul li a {
+			width:90px;
+			display:block;
+			}	
+.menu .search-result {
+					width:160px;
+					height:auto;
+					margin-top:5px;
+					border-top:3px solid #3E7C97;
+					}
+.search-result fieldset {
+						padding:5px;
+						border:1px solid #440000;
+						}
+.search-result legend {
+						color: #000001;
+						font-weight:600;
+}							
+.search-result .input-text {
+							margin-bottom:5px; 
+							width:140px;
+							border:2px solid #336699;
+}
+.search-result .input-text:hover {
+							margin-bottom:5px; 
+							width:140px;
+							border:2px solid #FFCC00;
+}																											
+.content-body .result {
+					width:717px;
+					height:auto;
+					float:right;
+					border-left:1px solid #CCCCCC;
+					margin:40px 0 0 0;
+					padding:0 0 0 19px;
+}										
+.result .result-body {
+					width:717px;
+					height:auto;
+					border-top:3px solid #3E7C97;
+					margin:5px 0 0 0;
+					padding:10px 0 0 0;
+					}
+					
+/* style for news page */
+					
+.mid1 .mid-content .pagination {
+							width:678px;
+							height:20px;
+							clear:both;
+							float:left;
+							text-align:right;
+							padding:10px 0 0 0;
+}
+.mid1 .mid-content .news {
+						width:678px;
+						height:auto;
+						margin-top:10px;
+						float:left;
+						}								
+.mid1 .mid-content .news p {
+							width:678px;
+							height:50px;
+							margin-bottom:5px;
+							}						
+.mid1 .mid-content .news p .news-title {
+									width:520px;
+									height:auto;
+									margin-left:20px;
+									float:left;
+									text-align:justify;
+									}
+.news-title a {
+				width:auto;
+				height:auto;
+				color: #336699;
+				font-size:11px;
+				line-height:14px;
+				padding:0 0 1px 0;
+				display:block;
+				}
+.news-title a:hover {
+					color: #666666;
+					text-decoration: underline;
+					display:block;
+					}													
+.mid1 .mid-content .news .date {
+								width:auto;
+								height:auto;
+								margin-left:20px;
+								float:right;
+								color:#555555;
+								font-family:georgia;
+								
+								}
+
+.right .right-content .archive {
+								width:200px;
+								height:auto;
+								}
+.archive ul {
+			width:auto;
+			height:auto;
+}								
+.archive ul li {
+				width:auto;
+				height:auto;
+				padding:0;
+}								
+.archive ul li a{
+				width:auto;
+				height:20px;
+				display:block;
+				color:#000000;
+				font-size:14px;
+				font-weight:bold;
+				}
+.archive ul li ul {
+				width:auto;
+				height:auto;
+				display:block;
+}
+.archive ul li ul li {
+				width:auto;
+				height:20px;
+				padding:0;
+				display:block;
+}				
+.archive ul li ul li a {
+						width:auto;
+						height:auto;
+						margin:0 0 0 10px;
+						font-size:13px;
+						font-weight:normal;
+						padding:0 0 1px 0;
+						display:inline-block;
+						font-style:oblique;
+}
+
+.archive ul li ul li a:hover {
+						color:#336600;
+						display:inline-block;
+}							
+/* Style for studnet's corner page */																																					
+
+
+.mid1 .mid-content .notification {
+							width:678px;
+							height:auto;
+							padding:10px 0 0 0;
+							float:left;
+}
+.notification .title-bar {
+							width:678px;
+							height:auto;
+							padding:0;
+							float:left;
+}							
+.title-bar .date {
+							width:200px;
+							height:auto;
+							float:left;
+							font-family:Georgia;
+							font-size:14px;
+							display:block;
+							color: #336600;
+}
+.title-bar .title {
+							width:428px;
+							height:auto;
+							float:left;
+							font-family:Arial, Helvetica, sans-serif;
+							font-size:16px;
+							color: #666666;
+							text-decoration:underline;
+							padding:0 0 0 50px;
+}
+.notification .details {
+							width:678px;
+							height:auto;
+							float:left;
+							font-family:verdana;
+							font-size:11px;
+							padding:10px 0 0 0;
+							line-height:14px;
+							text-align:justify;
+}
+notification .details p {
+							width:auto;
+							height:auto;
+							margin:0;
+}
+.notification .author {
+							width:auto;
+							height:auto;
+							float:right;
+							color:#000123;
+}
+.right-content .select-form {
+							width:auto;
+							height:auto;
+}
+.select-form form select {
+						width:198px;
+						height:auto;
+						margin:0 0 10px 0;
+						border:2px solid #A4BAB9 ;
+						font-family:verdana;
+						font-weight:500;
+						font-size:11px;
+						color:#A4A4A4;
+}														
+.right-content .content-item {
+							width:auto;
+							height:auto;
+							padding:0;
+}
+.content-item p {
+							width:auto;
+							height:auto;
+							padding:0 0 5px 0;
+							display:block;
+							overflow:hidden;
+}
+.content-item p a {
+							width:auto;
+							height:auto;
+							color: #999999;
+							display:block;
+							overflow:hidden;
+}
+.content-item p a:hover {
+							width:auto;
+							height:auto;
+							color:#555555;
+							font-weight:600;
+							display:block;
+							overflow:hidden;
+}
+.content-item .anchor a {
+							width:auto;
+							height:auto;
+							color: #999999;
+}
+.content-item .anchor a:hover {
+							width:auto;
+							height:auto;
+							color:#555555;
+							font-weight:600;
+}
+.mid1 .mid-content .student-zone {
+							width:658px;
+							height:auto;
+							padding:10px;
+							float:left;
+							clear:both;
+}
+.student-zone-title {
+							width:auto;
+							height:auto;
+							padding:0 0 5px 0;
+							border-bottom:1px solid #6699BB;
+							display:block;
+							color: #663300;
+							font-family:verdana;
+							font-size:15px;
+							line-height:13px;
+}
+.student-zone-details {
+							width:auto;
+							height:auto;
+							padding:10px 0 5px 0;
+							float:left;
+}
+.student-zone-details p {
+							width:auto;
+							height:auto;
+							padding:0 0 5px 0;
+							float:left;
+							color:#444555;
+							font-family:verdana;
+							font-size:12px;
+							text-align:justify;
+							line-height:15px;
+}
+.student-zone .post {
+							width:auto;
+							height:auto;
+							float:left;
+}
+.student-zone .post p {
+							width:auto;
+							height:auto;
+							display:block;
+							font-family:verdana;
+							font-size:11px;
+							color:#3399CC;
+}
+.post a {
+							width:100px;
+							height:auto;
+							line-height:14px;
+							color:#006633;
+							display:inline;
+}
+.post a:hover {
+							text-decoration:underline;
+							}
+.student-zone .group-img {
+							width:auto;
+							height:auto;
+							border:1px solid #0099CC;
+							float:left;
+}
+.student-zone .group-link {
+							width:auto;
+							height:100px;
+							float:left;
+							margin:0 0 0 20px;
+}
+.group-link p {
+							width:auto;
+							height:auto;
+							margin:0 0 10px 0;
+}
+.group-link a {
+							color:#000000;
+							font-family:verdana;
+							font-size:13px;
+							padding-bottom:1px;
+							border-bottom:1px solid;
+}
+.group-link a:hover {
+							color:#666666;
+}
+.group-title {
+							width:auto;
+							height:auto;
+}				
+.group-details {
+							width:300px;
+							height:auto;
+							color:#336699;
+							font-family:tahoma;
+}			
+/* style for gallery page */
+
+.mid1 .mid-content .galleryDiv {
+							width:678px;
+							height:auto;
+							float:left;
+							clear:both;
+							padding:10px 0 0 0;
+}
+.galleryDiv .gallery {
+							width:auto;
+							height:auto;
+							float:left;
+							padding:0 10px 0 10px;
+							margin:0 0 20px 0;
+							border:1px solid #CCCCCC;
+}
+.gallery .heading {
+							width:630px;
+							height:auto;
+							display:block;
+							float:left;
+							padding:10px 0 5px 0;
+							margin:0 0 0 14px;
+							font-variant:small-caps;
+							font-size:15px;
+							color:#336699;
+							border-bottom:1px solid #AAAAAA;
+}
+.gallery .gallery-content {
+							width:auto;
+							height:auto;
+							float:left;
+							padding:0 0 0 0;
+							border-top:0px solid #CCCCCC;
+}
+.gallery-content img {
+							width:130px;
+							height:90px;
+							float:left;
+							margin:15px 14px 15px 14px;
+							border:3px solid #cccccc;
+}
+.gallery-content img:hover {
+							border:3px solid #777777;
+}
+.gallery .paramlink a {
+							width:auto;
+							height:auto;
+							float:right;
+							padding:0 20px 2px 0;
+							color:#336699;
+							font-family:tahoma;
+							 
+}				
+.gallery .paramlink a:hover {
+							color:#3399CC;
+							font-weight:600;
+}			
+
+/* style for my profile page */
+
+.right .right-content .profile-item {
+							width:auto;
+							height:auto;
+							float:left;
+							padding:20px 0 0 0;
+}
+.profile-item ul {
+							width:auto;
+							height:auto;
+							padding:20px 0 0 0;
+							border-top:1px solid #999999;
+}
+.profile-item ul li {
+							width:200px;
+							height:25px;
+							display:block;
+}
+
+.profile-item ul li a {
+							line-height:12px;
+							color:#333333;
+							padding:6px 0 6px 10px;
+							display:block;
+							font-family:verdana;
+}
+.profile-item ul li a:hover {
+							background:#E6EFDE;
+}

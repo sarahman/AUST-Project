@@ -1,0 +1,9 @@
+// JavaScript Document
+$(document).ready(function(){
+		$('#newsticker').aSliderText({
+				updateTime: 3800,
+				height: 100,
+				//element: 'li'
+		});
+		
+	});
