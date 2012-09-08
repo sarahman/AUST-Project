@@ -1,54 +1,60 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><?php echo $this->config->item('siteTitle') ?></title>
+    <link type="text/css" rel="stylesheet" href="<?php echo site_url('assets/css/style.css') ?>" media="all" />
+    <link type="text/css" rel="stylesheet" href="<?php echo site_url('assets/css/BarackSlideshow.css') ?>" media="screen" title="Stylesheet" charset="utf-8" />
 
-	<head>
+    <script type="text/javascript" charset="utf-8" src="<?php echo site_url('assets/js/mootools-1.2.1-core-yc.js') ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo site_url('assets/js/mootools-1.2.2.2-more.js') ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo site_url('assets/js/Fx.MorphList.js') ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo site_url('assets/js/BarackSlideshow.js') ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo site_url('assets/js/jquery.js') ?>"></script>
+    <script type="text/javascript" charset="utf-8" src="<?php echo site_url('assets/js/jquery.aslidertext.js') ?>"></script>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        window.addEvent('domready', function(){
+             new BarackSlideshow('menu', 'pictures', 'loading', {transition: 'fade', auto: true ,autostart: true});
+        });
+        jQuery.noConflict();
+        jQuery(document).ready(function(){
+            jQuery('#newsticke').aSliderText({
+                    updateTime: 2000,
+                    height: 70
+                    //element: 'li'
+            });
+        });
+    </script>
+</head>
 
-		<title>RBS CI Version</title>
+<body>
+<div id="wrapper">
 
-		<style type="text/css" media="all">
-			@import url("<?php echo site_url('assets/css/style.css'); ?>");
-		</style>
+    <div id="top-menu">
+        <?php $this->load->view('layouts/top-menu.php') ?>
+    </div>
 
-		<script type="text/javascript" src="<?php echo site_url('assets/js/jquery.js') ?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('assets/js/app.js') ?>"></script>
+    <div id="header">
+        <?php $this->load->view('layouts/header.php') ?>
+    </div>
 
-	</head>
+    <div id="main-menu">
+        <?php $this->load->view('layouts/main-menu.php') ?>
+    </div>
 
-	<body>
+    <div id="content">
+        <?php echo $content_for_layout ?>
+    </div>
 
-		<div id="hld">					<!-- #hld begins -->
+</div>
 
-			<div class="wrapper">		<!-- #wrapper begins -->
+<div id="footerDiv">
 
-				<div id="header">		<!-- #header begins -->
+    <div id="footer">
+        <?php $this->load->view('layouts/footer.php') ?>
+    </div>
 
-				</div>					<!-- #header ends -->
-
-				<?php if (!empty($notification['message'])) : ?>
-
-				<div class="block message-block">
-
-					<div class="message <?php echo $notification['messageType'] ?>" style="display: block;">
-						<p><?php echo $notification['message'] ?></p>
-					</div>
-
-				</div>
-
-				<?php endif ?>
-
-				<?php echo $content_for_layout ?>
-
-				<div id="footer">		<!-- #footer begins -->
-
-					<p class="left">powered by <a href="http://www.rightbrainsolution.com/">Right Brain Solution Ltd.</a></p>
-
-				</div>					<!-- #footer ends -->
-
-			</div>						<!-- #wrapper ends -->
-
-		</div>							<!-- #hld ends -->
-
-	</body>
+</div>
+</body>
 </html>
