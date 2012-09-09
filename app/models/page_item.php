@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Description of Pages
+ * Description of Page Items
  *
  * @package     Model
  * @author      Syed Abidur Rahman <aabid048@gmail.com>
@@ -14,20 +14,26 @@ class Page_Item extends MY_Model
         $this->loadTable('page_items', 'item_id');
     }
 
-    public function getAll($options = array())
+    public function getAll($options)
     {
         return $this->findAll($options);
     }
 
-    public function getDetail($page = 1)
+    public function getDetail($options = array('item_id' => 1))
     {
-        $this->db->select();
-        $this->db->from($this->tableName);
-        $this->db->join('page_items', "{$this->tableName}.{$this->primaryKey}=page_items.{$this->primaryKey}");
-        $this->db->where(array("{$this->tableName}.{$this->primaryKey}" => $page));
+        return $this->find($options);
+    }
 
-        $result = $this->db->get()->row_array();
-        return empty($result) ? '' : $result['detail'];
+    public function getAllWithFiles($pageId = 1)
+    {
+        $sql = "SELECT `{$this->tableName}`.`title`, `{$this->tableName}`.`detail`, `images`.`name` AS `image_name`,
+                  `files`.`name` AS `file_name`
+                FROM `{$this->tableName}`, `images`, `files`
+                WHERE `{$this->tableName}`.`page_id` = '{$pageId}'
+                AND `{$this->tableName}`.`title` = `images`.`type`
+                AND `{$this->tableName}`.`title` = `files`.`type`";
+
+        return $this->executeQuery($sql);
     }
 
     public function save(array $data)
@@ -41,7 +47,7 @@ class Page_Item extends MY_Model
             return false;
         }
 
-        return parent::update($data, $id);
+        return $this->update($data, $id);
     }
 
     public function delete($id)

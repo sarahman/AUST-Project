@@ -1,9 +1,9 @@
-		<ul>
-			<li><a href="index.php?page_id=1">Home</a></li>
-			<li><a href="about/about.php?page_id=2">About</a></li>
-			<li><a href="administration/administration.php?page_id=12">Administration</a></li>
-			<li><a href="academics/academics.php?page_id=17">Academics</a></li>
-			<li><a href="admission/admission.php?page_id=21">Admission</a></li>
-			<li><a href="faculty/faculty.php?page_id=29">Faculty</a></li>
-			<li><a href="login/login.php">Login</a></li>
-		</ul>
+        <ul>
+            <li><a href="<?php echo site_url('home/index') ?>">Home</a></li>
+            <li><a href="<?php echo site_url('home/about') ?>">About</a></li>
+            <li><a href="<?php echo site_url('administration') ?>">Administration</a></li>
+            <li><a href="<?php echo site_url('academics') ?>">Academics</a></li>
+            <li><a href="<?php echo site_url('admission') ?>">Admission</a></li>
+            <li><a href="<?php echo site_url('faculties') ?>">Faculty</a></li>
+            <li><a href="<?php echo site_url('auth/login') ?>">Login</a></li>
+        </ul>
